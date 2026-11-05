@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李育家 Lee | 個人自我介紹與作品集</title>
+  <meta name="description" content="李育家 (Lee) 的個人自我介紹網站 - 台南應用科技大學多媒體動畫系，角色設計、遊戲初期美術、學習成果作品集與未來規劃。">
+  
+  <!-- Google Fonts: 融合千禧龐克搖滾、俐落標題與高辨識繁體中文 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-body">
+
+  <!-- 頂部系統狀態列 (HUD Header Strip) -->
+  <aside class="hud-top-bar" aria-hidden="true">
+    <div class="hud-inner">
+      <span class="hud-item"><span class="hud-blink">●</span> PORTFOLIO // TUT_MULTIMEDIA_ANIMATION</span>
+      <span class="hud-item">DISCIPLINE: CHARACTER & GAME ART</span>
+      <span class="hud-item">EDITION: 2026.ONLINE</span>
+      <span class="hud-item hud-time" id="hudTimestamp">SYS.CLOCK: LOADING...</span>
+    </div>
+  </aside>
+
+  <!-- 導覽列 NAVIGATION (固定於頂端，支援手機與電腦版面) -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      
+      <!-- 品牌標章 LOGO -->
+      <a href="#hero" class="brand-logo" aria-label="回到首頁">
+        <span class="logo-stencil">LEE</span>
+        <div class="brand-titles">
+          <span class="brand-main">李育家 / Lee</span>
+          <span class="brand-sub">PORTFOLIO ARCHIVE</span>
+        </div>
+      </a>
+
+      <!-- 電腦端導覽連結 -->
+      <nav class="desktop-nav" aria-label="主要導覽選單">
+        <a href="#hero" class="nav-btn active"><span class="btn-prefix">[01]</span>首頁介紹</a>
+        <a href="#about" class="nav-btn"><span class="btn-prefix">[02]</span>關於我</a>
+        <a href="#interests" class="nav-btn"><span class="btn-prefix">[03]</span>興趣與專長</a>
+        <a href="#works" class="nav-btn"><span class="btn-prefix">[04]</span>學習成果</a>
+        <a href="#future" class="nav-btn"><span class="btn-prefix">[05]</span>未來與聯絡</a>
+      </nav>
+
+      <!-- 手機端選單開關按鈕 -->
+      <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="切換導覽選單" aria-expanded="false">
+        <span class="toggle-icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </span>
+        <span class="toggle-text">MENU</span>
+      </button>
+
+    </div>
+
+    <!-- 手機端滑出抽屜選單 -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <span class="drawer-title">// NAVIGATION_INDEX</span>
+        <span class="drawer-code">[STATUS: READY]</span>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#hero" class="mobile-link"><span class="link-idx">01</span> 首頁介紹 <span class="link-en">HOME</span></a>
+        <a href="#about" class="mobile-link"><span class="link-idx">02</span> 關於我 <span class="link-en">ABOUT</span></a>
+        <a href="#interests" class="mobile-link"><span class="link-idx">03</span> 興趣與專長 <span class="link-en">INTERESTS</span></a>
+        <a href="#works" class="mobile-link"><span class="link-idx">04</span> 學習成果與作品集 <span class="link-en">WORKS</span></a>
+        <a href="#future" class="mobile-link"><span class="link-idx">05</span> 未來規劃與聯絡我 <span class="link-en">CONTACT</span></a>
+      </nav>
+      <div class="drawer-footer-tech">
+        <span>TUT MULTIMEDIA ANIMATION</span>
+        <span>LEE PORTFOLIO ARCHIVE</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- 1｜首頁介紹 HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="section-shell">
+        
+        <!-- 首頁核心容器 (融合千禧龐克與高對比色塊) -->
+        <div class="terminal-panel hero-panel">
+          
+          <!-- 面板頂部資訊條 -->
+          <div class="panel-header-strip">
+            <div class="panel-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-txt">SECTION_01 // CREATOR_PROFILE</span>
+            </div>
+            <div class="panel-coords">LOC: TAINAN, TAIWAN // DEPT. OF MULTIMEDIA ANIMATION</div>
+          </div>
+
+          <div class="hero-grid-body">
+            
+            <!-- 個人照片區塊 (雙層鉚釘金屬色塊外框) -->
+            <div class="hero-visual-col">
+              <div class="pfp-tactical-frame">
+                <div class="bracket-tl"></div>
+                <div class="bracket-tr"></div>
+                <div class="bracket-bl"></div>
+                <div class="bracket-br"></div>
+                
+                <div class="pfp-label-bar">
+                  <span class="rec-dot"></span>
+                  <span class="pfp-label-text">PROFILE_PHOTO // 01</span>
+                </div>
+                
+                <div class="pfp-img-container">
+                  <img src="pfp/IMG_4213.jpg" alt="李育家 Lee 個人照片" class="pfp-image">
+                  <div class="scanline-overlay" aria-hidden="true"></div>
+                </div>
+
+                <div class="pfp-footer-barcode">
+                  <span class="barcode" aria-hidden="true">||| | ||||| || | |||| |||</span>
+                  <span class="serial">ID: TUT-ANI-LEE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 首頁文字色塊區塊 (嚴格遵照：名字：李育家 、Lee，不額外生成其他自我介紹) -->
+            <div class="hero-info-col">
+              
+              <!-- 頂部風格標籤 -->
+              <div class="stencil-sub-badge">
+                <span class="badge-icon">★</span>
+                <span>MULTIMEDIA & ANIMATION ARTIST</span>
+              </div>
+
+              <!-- 名字主色塊 (以 #AA1F1F 與 #4F0803 打造醒目色塊背景) -->
+              <div class="name-color-block">
+                <div class="name-block-top">
+                  <span class="ch-label">NAME // 識別姓名</span>
+                  <span class="status-indicator">ONLINE</span>
+                </div>
+                <div class="name-display">
+                  <h1 class="chinese-name">李育家</h1>
+                  <span class="name-separator">/</span>
+                  <span class="english-name">Lee</span>
+                </div>
+                <div class="name-badges-row">
+                  <span class="tech-pill pill-olive">台南應用科技大學</span>
+                  <span class="tech-pill pill-crimson">多媒體動畫系</span>
+                  <span class="tech-pill pill-red">角色設計與遊戲美術探索</span>
+                </div>
+              </div>
+
+              <!-- 快捷導覽色塊按鈕列 (全網頁區塊連結) -->
+              <div class="hero-actions-grid">
+                <a href="#about" class="hero-jump-btn btn-block-crimson">
+                  <div class="btn-idx">02</div>
+                  <div class="btn-body">
+                    <span class="btn-main-txt">關於我</span>
+                    <span class="btn-sub-txt">ABOUT ME</span>
+                  </div>
+                  <span class="btn-arrow">>></span>
+                </a>
+
+                <a href="#interests" class="hero-jump-btn btn-block-olive">
+                  <div class="btn-idx">03</div>
+                  <div class="btn-body">
+                    <span class="btn-main-txt">興趣與專長</span>
+                    <span class="btn-sub-txt">INTERESTS</span>
+                  </div>
+                  <span class="btn-arrow">>></span>
+                </a>
+
+                <a href="#works" class="hero-jump-btn btn-block-red">
+                  <div class="btn-idx">04</div>
+                  <div class="btn-body">
+                    <span class="btn-main-txt">學習成果</span>
+                    <span class="btn-sub-txt">WORKS GALLERY</span>
+                  </div>
+                  <span class="btn-arrow">>></span>
+                </a>
+
+                <a href="#future" class="hero-jump-btn btn-block-dark">
+                  <div class="btn-idx">05</div>
+                  <div class="btn-body">
+                    <span class="btn-main-txt">未來與聯絡</span>
+                    <span class="btn-sub-txt">CONTACT</span>
+                  </div>
+                  <span class="btn-arrow">>></span>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 面板底部修飾線 -->
+          <div class="panel-bottom-wire" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 2｜關於我 ABOUT SECTION -->
+    <section id="about" class="content-section">
+      <div class="section-shell">
+        
+        <!-- 章節色塊標題橫條 -->
+        <div class="section-header-banner">
+          <div class="banner-num-box">02</div>
+          <div class="banner-title-box">
+            <h2 class="section-heading">關於我</h2>
+            <span class="section-heading-en">ABOUT ME // EDUCATION & BIO</span>
+          </div>
+          <div class="banner-tech-grid" aria-hidden="true">
+            <span>[PROFILE]</span>
+            <span>//////</span>
+          </div>
+        </div>
+
+        <!-- 內容色塊網格 (使用 #4F0803, #AA1F1F, #4C4B1E 作為色塊文字背景) -->
+        <div class="about-blocks-grid">
+          
+          <!-- 學歷資訊色塊卡片 (以 #4F0803 與 #AA1F1F 為背景) -->
+          <div class="content-color-block block-crimson">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">ACADEMIC // 就讀資訊</span>
+              <span class="tag-code">[INFO_02-A]</span>
+            </div>
+            
+            <div class="academic-info-body">
+              <div class="info-row">
+                <span class="info-header-tag">就讀學校</span>
+                <span class="info-value-text">台南應用科技大學</span>
+              </div>
+              <div class="block-inner-divider"></div>
+              <div class="info-row">
+                <span class="info-header-tag">就讀科系</span>
+                <span class="info-value-text">多媒體動畫系</span>
+              </div>
+            </div>
+
+            <div class="block-stencil-watermark">TUT.ANI</div>
+          </div>
+
+          <!-- 自我介紹核心內容色塊卡片 (以 #4C4B1E 為背景) -->
+          <div class="content-color-block block-olive">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">BIO // 自我介紹</span>
+              <span class="tag-code">[STATEMENT]</span>
+            </div>
+            
+            <div class="bio-text-container">
+              <p class="bio-main-paragraph">
+                我對於遊戲設計以及電影初期美術感興趣，喜歡研究虛擬角色的設計、美術分鏡等以及探索何運用畫面帶給觀眾或玩家強烈沉浸感。
+              </p>
+            </div>
+
+            <!-- 核心關注標籤 -->
+            <div class="bio-keywords-row">
+              <span class="kw-tag">角色設計</span>
+              <span class="kw-tag">美術分鏡</span>
+              <span class="kw-tag">遊戲設計</span>
+              <span class="kw-tag">電影初期美術</span>
+              <span class="kw-tag">畫面沉浸感</span>
+            </div>
+
+            <div class="block-stencil-watermark">CREATE</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 3｜興趣與專長 INTERESTS & SKILLS SECTION -->
+    <section id="interests" class="content-section">
+      <div class="section-shell">
+        
+        <!-- 章節色塊標題橫條 -->
+        <div class="section-header-banner">
+          <div class="banner-num-box">03</div>
+          <div class="banner-title-box">
+            <h2 class="section-heading">興趣與專長</h2>
+            <span class="section-heading-en">INTERESTS & SKILLS // MUSIC, GAMES & SCI-FI</span>
+          </div>
+          <div class="banner-tech-grid" aria-hidden="true">
+            <span>[INTERESTS]</span>
+            <span>//////</span>
+          </div>
+        </div>
+
+        <div class="interests-layout">
+
+          <!-- 主題一：科幻影視 (色塊卡片) -->
+          <div class="content-color-block block-dark-crimson">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">THEME 01 // 科幻影視</span>
+              <span class="tag-code">[SCI-FI WORLD]</span>
+            </div>
+            <div class="theme-content-box">
+              <p class="theme-text-desc">
+                未來科技架構、奇幻世界觀等
+              </p>
+            </div>
+          </div>
+
+          <!-- 主題二：音樂 (龐克搖滾黑膠唱片展示架 + 摺疊堆疊切換) -->
+          <div class="content-color-block block-music-module">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">THEME 02 // 音樂熱愛 (MILLENNIUM PUNK ROCK)</span>
+              <span class="tag-code">[RECORD_RACK]</span>
+            </div>
+
+            <div class="music-intro-box">
+              <p class="music-intro-desc">
+                熱衷於千禧年的龐克搖滾，喜歡的樂團：<strong>我的另類羅曼史</strong>、<strong>穿透面紗</strong>、<strong>打倒男孩</strong>
+              </p>
+            </div>
+
+            <!-- 唱片展示模組 (尺寸適中、黑膠滑出、支援摺疊堆疊與展開展示) -->
+            <div class="vinyl-crate-container">
+              
+              <div class="crate-control-bar">
+                <div class="crate-status">
+                  <span class="status-pulse-light"></span>
+                  <span class="crate-guide">唱片封套展示 ✦ 點擊按鈕切換「展開 / 摺疊」，懸停或點選抽出黑膠</span>
+                </div>
+                
+                <div class="crate-action-buttons">
+                  <button type="button" class="view-toggle-btn active" id="btnSpreadMode">
+                    <span class="btn-sym">▦</span> 展開展示 [SPREAD]
+                  </button>
+                  <button type="button" class="view-toggle-btn" id="btnFoldMode">
+                    <span class="btn-sym">▤</span> 摺疊堆疊 [FOLD / STACK]
+                  </button>
+                </div>
+              </div>
+
+              <!-- 唱片架實體 (Vinyl Rack) -->
+              <div class="vinyl-deck spread-state" id="vinylDeck">
+                
+                <!-- 唱片 1：我的另類羅曼史 -->
+                <div class="vinyl-unit" data-band="mcr">
+                  <div class="unit-sleeve-pack">
+                    <!-- 黑膠唱片本體 (滑出) -->
+                    <div class="vinyl-record-disc" aria-hidden="true">
+                      <div class="groove-layer"></div>
+                      <div class="disc-label label-mcr">
+                        <span class="disc-txt">MCR</span>
+                      </div>
+                    </div>
+                    <!-- 唱片外封套 (Sleeve Cover) -->
+                    <div class="sleeve-jacket">
+                      <img src="album%20cover/%E7%BE%85%E6%9B%BC%E5%8F%B2.jpg" alt="我的另類羅曼史 唱片封面" class="sleeve-img" loading="lazy">
+                      <div class="jacket-wear-edge"></div>
+                      <div class="jacket-corner-tag">ALBUM 01</div>
+                    </div>
+                  </div>
+                  <div class="unit-caption-block">
+                    <span class="caption-band-zh">我的另類羅曼史</span>
+                    <span class="caption-band-en">My Chemical Romance</span>
+                  </div>
+                </div>
+
+                <!-- 唱片 2：穿透面紗 -->
+                <div class="vinyl-unit" data-band="ptv">
+                  <div class="unit-sleeve-pack">
+                    <div class="vinyl-record-disc" aria-hidden="true">
+                      <div class="groove-layer"></div>
+                      <div class="disc-label label-ptv">
+                        <span class="disc-txt">PTV</span>
+                      </div>
+                    </div>
+                    <div class="sleeve-jacket">
+                      <img src="album%20cover/%E7%A9%BF%E9%80%8F%E9%9D%A2%E7%B4%97.jpg" alt="穿透面紗 唱片封面" class="sleeve-img" loading="lazy">
+                      <div class="jacket-wear-edge"></div>
+                      <div class="jacket-corner-tag">ALBUM 02</div>
+                    </div>
+                  </div>
+                  <div class="unit-caption-block">
+                    <span class="caption-band-zh">穿透面紗</span>
+                    <span class="caption-band-en">Pierce The Veil</span>
+                  </div>
+                </div>
+
+                <!-- 唱片 3：打倒男孩 -->
+                <div class="vinyl-unit" data-band="fob">
+                  <div class="unit-sleeve-pack">
+                    <div class="vinyl-record-disc" aria-hidden="true">
+                      <div class="groove-layer"></div>
+                      <div class="disc-label label-fob">
+                        <span class="disc-txt">FOB</span>
+                      </div>
+                    </div>
+                    <div class="sleeve-jacket">
+                      <img src="album%20cover/%E6%89%93%E5%80%92%E7%94%B7%E5%AD%A9.jpg" alt="打倒男孩 唱片封面" class="sleeve-img" loading="lazy">
+                      <div class="jacket-wear-edge"></div>
+                      <div class="jacket-corner-tag">ALBUM 03</div>
+                    </div>
+                  </div>
+                  <div class="unit-caption-block">
+                    <span class="caption-band-zh">打倒男孩</span>
+                    <span class="caption-band-en">Fall Out Boy</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 主題三：遊戲 (動作角色扮演遊戲分析) -->
+          <div class="content-color-block block-dark-crimson">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">THEME 03 // 遊戲分析</span>
+              <span class="tag-code">[ARPG_ANALYSIS]</span>
+            </div>
+            
+            <div class="game-info-box">
+              <p class="game-desc-paragraph">
+                有歡遊玩動作角色扮演遊戲，並分析角色外觀造形、關卡美術、介面體驗及互動機制。
+              </p>
+              
+              <div class="game-cards-group">
+                <span class="game-list-title">喜歡的遊戲：</span>
+                <div class="game-item-cards">
+                  <div class="game-badge-card">
+                    <span class="game-badge-num">01</span>
+                    <span class="game-badge-name">空洞騎士 (Hollow Knight)</span>
+                  </div>
+                  <div class="game-badge-card">
+                    <span class="game-badge-num">02</span>
+                    <span class="game-badge-name">臥龍蒼天隕落 (Wo Long: Fallen Dynasty)</span>
+                  </div>
+                  <div class="game-badge-card">
+                    <span class="game-badge-num">03</span>
+                    <span class="game-badge-name">人中之龍 (Like a Dragon)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 已具備或正在學習的技能 -->
+          <div class="skills-color-block">
+            <div class="skills-bar-header">
+              <span class="crosshair">+</span>
+              <span class="skills-heading-tag">CAPABILITIES // 已具備或正在學習的技能</span>
+              <span class="skills-ref">[SKILLS_MATRIX]</span>
+            </div>
+
+            <div class="skills-cards-grid">
+              
+              <div class="skill-tactical-card card-video">
+                <div class="skill-card-top">
+                  <span class="skill-badge-code">SKILL // 01</span>
+                  <span class="skill-status-light">STATUS: ACTIVE</span>
+                </div>
+                <div class="skill-content">
+                  <h3 class="skill-title">影音製作</h3>
+                  <p class="skill-eng">Video Production & Editing</p>
+                  <div class="skill-progress-bar">
+                    <div class="progress-fill fill-video"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-tactical-card card-art">
+                <div class="skill-card-top">
+                  <span class="skill-badge-code">SKILL // 02</span>
+                  <span class="skill-status-light">STATUS: PROGRESS</span>
+                </div>
+                <div class="skill-content">
+                  <h3 class="skill-title">基本繪圖能力</h3>
+                  <p class="skill-eng">Drawing & Concept Art</p>
+                  <div class="skill-progress-bar">
+                    <div class="progress-fill fill-art"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 4｜學習成果與作品集 PORTFOLIO SECTION -->
+    <section id="works" class="content-section">
+      <div class="section-shell">
+        
+        <!-- 章節色塊標題橫條 -->
+        <div class="section-header-banner">
+          <div class="banner-num-box">04</div>
+          <div class="banner-title-box">
+            <h2 class="section-heading">學習成果與作品集</h2>
+            <span class="section-sub-heading-en">WORKS & GALLERY ARCHIVE // 點選可放大檢視高解析度作品</span>
+          </div>
+          <div class="banner-tech-grid" aria-hidden="true">
+            <span>[TOTAL: 07]</span>
+            <span>//////</span>
+          </div>
+        </div>
+
+        <!-- 作品展示控制列 (支援摺疊堆疊與展開切換) -->
+        <div class="works-control-bar">
+          <div class="works-status">
+            <span class="status-pulse-light"></span>
+            <span class="works-guide">作品畫廊 ✦ 支援「摺疊堆疊 / 展開展示」切換，點選作品卡片可抽檢或放大觀看</span>
+          </div>
+          <div class="works-action-buttons">
+            <button type="button" class="view-toggle-btn active" id="btnWorksFoldMode">
+              <span class="btn-sym">▤</span> 摺疊堆疊 [STACK / FOLD]
+            </button>
+            <button type="button" class="view-toggle-btn" id="btnWorksSpreadMode">
+              <span class="btn-sym">▦</span> 展開展示 [SPREAD]
+            </button>
+          </div>
+        </div>
+
+        <!-- 摺疊堆疊模式下的卡片快捷導覽列 -->
+        <div class="deck-nav-controls" id="deckNavControls">
+          <button type="button" class="deck-nav-btn" id="deckPrevBtn" aria-label="上一件作品">◀ 上一件 PREV</button>
+          <span class="deck-indicator" id="deckIndicator">目前抽檢：創作成果 #01 (1 / 7)</span>
+          <button type="button" class="deck-nav-btn" id="deckNextBtn" aria-label="下一件作品">下一件 NEXT ▶</button>
+        </div>
+
+        <!-- 作品列表 (預設摺疊堆疊展示，亦可展開為網格) -->
+        <div class="portfolio-deck folded-state" id="portfolioDeck">
+
+          <!-- 作品 01 -->
+          <article class="portfolio-card" data-index="0" data-src="works/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E4%BD%9C%E5%93%81.png" data-title="創作成果展示 01">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 01</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E4%BD%9C%E5%93%81.png" alt="李育家作品 01" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">創作成果 #01</span>
+                <span class="bezel-type">PNG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 作品 02 (直幅海報/人物作品) -->
+          <article class="portfolio-card card-tall" data-index="1" data-src="works/5cf2da1cbc9e5a32.jpg" data-title="創作成果展示 02 (角色概念)">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 02</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/5cf2da1cbc9e5a32.jpg" alt="李育家作品 02" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">創作成果 #02 (海報/角色概念)</span>
+                <span class="bezel-type">JPG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 作品 03 (近期創作成果) -->
+          <article class="portfolio-card" data-index="2" data-src="works/629b9321a4d677bf.png" data-title="創作成果展示 03">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 03</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/629b9321a4d677bf.png" alt="李育家作品 03" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">創作成果 #03</span>
+                <span class="bezel-type">PNG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 作品 04 (期中專案) -->
+          <article class="portfolio-card" data-index="3" data-src="works/d13370394_%E6%9C%9F%E4%B8%AD1%20(2).png" data-title="期中專案作品展示">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 04</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/d13370394_%E6%9C%9F%E4%B8%AD1%20(2).png" alt="期中作品專案" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">期中專案成果 #04</span>
+                <span class="bezel-type">PNG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 作品 05 (直幅創作展示) -->
+          <article class="portfolio-card card-tall" data-index="4" data-src="works/IMG_5858.jpg" data-title="創作成果展示 05">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 05</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/IMG_5858.jpg" alt="李育家作品 05" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">創作成果 #05</span>
+                <span class="bezel-type">JPG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 作品 06 -->
+          <article class="portfolio-card" data-index="5" data-src="works/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E4%BD%9C%E5%93%81%201%20(1).png" data-title="創作成果展示 06">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 06</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E4%BD%9C%E5%93%81%201%20(1).png" alt="李育家作品 06" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">創作成果 #06</span>
+                <span class="bezel-type">PNG</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 作品 07 -->
+          <article class="portfolio-card" data-index="6" data-src="works/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E4%BD%9C%E5%93%81%202%20(1).png" data-title="創作成果展示 07">
+            <div class="card-tech-bezel">
+              <div class="bezel-top">
+                <span class="bezel-code">WORK // 07</span>
+                <span class="bezel-action">🔍 點選放大檢視</span>
+              </div>
+              <div class="bezel-media">
+                <img src="works/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%9A%84%E4%BD%9C%E5%93%81%202%20(1).png" alt="李育家作品 07" class="media-thumb" loading="lazy">
+                <div class="media-hover-hud">
+                  <span class="hud-view-btn">VIEW FULLSCREEN</span>
+                </div>
+              </div>
+              <div class="bezel-bottom">
+                <span class="bezel-filename">創作成果 #07</span>
+                <span class="bezel-type">PNG</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 5｜未來規劃與聯絡我 FUTURE & CONTACT SECTION -->
+    <section id="future" class="content-section">
+      <div class="section-shell">
+        
+        <!-- 章節色塊標題橫條 -->
+        <div class="section-header-banner">
+          <div class="banner-num-box">05</div>
+          <div class="banner-title-box">
+            <h2 class="section-heading">未來規劃與聯絡我</h2>
+            <span class="section-sub-heading-en">FUTURE OBJECTIVES & CONTACT CHANNEL</span>
+          </div>
+          <div class="banner-tech-grid" aria-hidden="true">
+            <span>[CONTACT]</span>
+            <span>//////</span>
+          </div>
+        </div>
+
+        <div class="future-contact-layout">
+
+          <!-- 未來規劃色塊卡片 (以深紅 #4F0803 為主色塊) -->
+          <div class="content-color-block future-plan-card">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">ROADMAP // 目標與方向</span>
+              <span class="tag-code">[CAREER_PATH]</span>
+            </div>
+
+            <div class="plan-items-wrapper">
+              
+              <!-- 短期目標 -->
+              <div class="plan-item-box block-crimson-tint">
+                <div class="plan-badge-col">
+                  <span class="plan-type-pill pill-crimson">短期目標</span>
+                </div>
+                <div class="plan-desc-col">
+                  <p class="plan-text">磨練繪製場景設計的能力以及設計角色等技能</p>
+                </div>
+              </div>
+
+              <!-- 未來發展方向 -->
+              <div class="plan-item-box block-red-tint">
+                <div class="plan-badge-col">
+                  <span class="plan-type-pill pill-red">未來發展方向</span>
+                </div>
+                <div class="plan-desc-col">
+                  <p class="plan-text">成為角色設計或與遊戲設計相關等工作</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 聯絡我色塊卡片 (以野戰軍綠 #4C4B1E 為主色塊) -->
+          <div class="content-color-block contact-terminal-card">
+            <div class="block-top-tag">
+              <span class="crosshair">+</span>
+              <span class="tag-title">COMMUNICATION // 聯絡信箱</span>
+              <span class="tag-code">[DIRECT_MAIL]</span>
+            </div>
+
+            <div class="terminal-body-box">
+              <div class="terminal-prompt-line">
+                <span class="prompt-sym">></span>
+                <span class="prompt-text">EMAIL_INBOX_ADDRESS:</span>
+              </div>
+
+              <!-- 信箱顯示框 (高對比色塊框) -->
+              <div class="email-terminal-screen">
+                <span class="screen-cursor">_</span>
+                <span class="screen-email-val" id="emailVal">d13370394@gm.tut.edu.tw</span>
+              </div>
+
+              <!-- 快捷按鈕組：一鍵複製 & 立即發信 -->
+              <div class="terminal-buttons-row">
+                <button type="button" class="action-tech-btn btn-copy" id="copyBtn">
+                  <span class="btn-icon">📋</span>
+                  <span class="btn-text-content" id="copyBtnLabel">複製信箱地址</span>
+                </button>
+                <a href="mailto:d13370394@gm.tut.edu.tw" class="action-tech-btn btn-mail">
+                  <span class="btn-icon">✉</span>
+                  <span class="btn-text-content">開啟郵件軟體</span>
+                </a>
+              </div>
+
+              <!-- 複製成功提示 -->
+              <div class="copy-alert-message" id="copyAlert" role="status" aria-live="polite">
+                [SUCCESS] 信箱地址已成功複製到剪貼簿！
+              </div>
+            </div>
+
+            <div class="terminal-card-footer">
+              <span>TARGET: d13370394@gm.tut.edu.tw</span>
+              <span>TUT_ANI // LEE</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 燈箱彈窗 LIGHTBOX MODAL (點擊作品全螢幕高解析檢視，支援全部 7 張作品切換) -->
+  <div class="lightbox-modal-window" id="lightboxModal" role="dialog" aria-modal="true" aria-label="作品放大檢視視窗">
+    <div class="lightbox-curtain" id="lightboxCurtain"></div>
+    <div class="lightbox-terminal-box">
+      <div class="lightbox-top-bar">
+        <span class="lightbox-title-text" id="lightboxTitle">作品預覽</span>
+        <button type="button" class="lightbox-exit-btn" id="lightboxClose" aria-label="關閉視窗">[X] CLOSE</button>
+      </div>
+      <div class="lightbox-canvas-area">
+        <img src="" alt="放大作品預覽" class="lightbox-main-img" id="lightboxImg">
+      </div>
+      <div class="lightbox-control-bar">
+        <button type="button" class="lightbox-step-btn" id="lightboxPrev" aria-label="上一張"><< PREV</button>
+        <span class="lightbox-index-counter" id="lightboxCounter">1 / 7</span>
+        <button type="button" class="lightbox-step-btn" id="lightboxNext" aria-label="下一張">NEXT >></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 頁尾 FOOTER (專屬千禧龐克與多媒體動畫創作個人底欄) -->
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-info-col">
+        <div class="footer-badge">LEE YU-CHIA // CREATIVE PORTFOLIO ARCHIVE</div>
+        <p class="footer-meta">© 2026 李育家 Lee // 台南應用科技大學 多媒體動畫系</p>
+      </div>
+      <div class="footer-action-col">
+        <a href="#hero" class="return-top-btn" id="returnTopBtn">
+          <span class="top-arrow">▲</span> RETURN TO TOP
+        </a>
+      </div>
+    </div>
+    <div class="footer-wire-bottom" aria-hidden="true"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
